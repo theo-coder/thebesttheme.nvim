@@ -24,3 +24,4 @@ colors.float = "#3B4252"
 colors.highlight = "#5599dd33"
 colors.selection = "#5599DD66"
 
+return colors
