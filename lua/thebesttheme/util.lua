@@ -39,7 +39,7 @@ function util.load(colors, exec_autocmd)
         util.highlight(group, color)
     end
 
-    theme.load_terminal()
+    --theme.load_terminal()
 
     if exec_autocmd then
         vim.cmd("doautocmd ColorScheme")
