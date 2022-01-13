@@ -20,31 +20,32 @@ function theme.highlights(colors, config)
         return editor
     end
 
-    local function load_treesitter()
-        local treesitter = {
+    -- local function load_treesitter()
+    --     local treesitter = {
+    --
+    --     }
+    --     return treesitter
+    -- end
+    --
+    -- local function load_lsp()
+    --     local lsp = {
+    --
+    --     }
+    --     return lsp
+    -- end
+    --
+    -- local function load_plugins()
+    --     local plugins = {
+    --
+    --     }
+    --     return plugins
+    -- end
+    --
+    -- function theme.load_terminal()
+    -- end
 
-        }
-        return treesitter
-    end
-
-    local function load_lsp()
-        local lsp = {
-
-        }
-        return lsp
-    end
-
-    local function load_plugins()
-        local plugins = {
-
-        }
-        return plugins
-    end
-
-    function theme.load_terminal()
-    end
-
-    return vim.tbl_deep_extend("error", load_syntax(), load_editor(), load_treesitter(), load_lsp(), load_plugins())
+    -- return vim.tbl_deep_extend("error", load_syntax(), load_editor(), load_treesitter(), load_lsp(), load_plugins())
+    return vim.tbl_deep_extend("error", load_syntax(), load_editor())
 end
 
 return theme
