@@ -15,6 +15,7 @@ function theme.highlights(colors, config)
     local function load_editor()
         local editor = {
             LineNr = { fg = "#354050" },
+            CursorLineNr = { fg = "#40709E" },
             Normal = { fg = colors.fg, bg = colors.bg },
             NormalNC = { bg = colors.bg },
         }
