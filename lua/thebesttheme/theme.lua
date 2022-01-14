@@ -36,18 +36,20 @@ function theme.highlights(colors, config)
     --     return lsp
     -- end
     --
-    -- local function load_plugins()
-    --     local plugins = {
-    --
-    --     }
-    --     return plugins
-    -- end
+    local function load_plugins()
+        local plugins = {
+            -- Indent Blankline
+            IndentBlanklineChar = { fg = "#19232D", style = "nocombine" },
+            IndentBlanklineContextChar = { fg = "#213445", style = "nocombine" },
+        }
+        return plugins
+    end
     --
     -- function theme.load_terminal()
     -- end
 
     -- return vim.tbl_deep_extend("error", load_syntax(), load_editor(), load_treesitter(), load_lsp(), load_plugins())
-    return vim.tbl_deep_extend("error", load_syntax(), load_editor())
+    return vim.tbl_deep_extend("error", load_syntax(), load_editor(), load_plugins())
 end
 
 return theme
